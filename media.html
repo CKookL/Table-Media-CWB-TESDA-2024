@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Table-Media</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="images/icon.png" alt="" />
+      <p style="padding-left: 50px">Media CSS</p>
+      <div
+        style="display: flex; align-items: center; gap: 20px; font-weight: 600"
+      >
+        <a href="media.html" style="color: #6d9886">Medias</a>
+      </div>
+    </nav>
+
+    <div class="group">
+      <div class="container text" style="max-width: 40vw; box-shadow: none; border: none">
+        <p class="center"><b>Images</b> can be styled in different ways using Materialize</p>
+        </div>
+
+      <!-- Image Default -->
+      <div class="container">
+        <h5 class="center">Images</h5>
+        <div class="text">
+          <h5 style="font-weight: bold">Responsive Images</h5>
+          <p>
+            To make images resize responsively to page width, you can add the
+            class <code class="language-markup" style="padding: 2px; background-color: #6d98861b">responsive-img</code> to your
+            image tag. It will now have a
+            <code
+              class="language-markup"
+              style="padding: 2px; background-color: #6d98861b"
+              >max-width: 100%</code
+            >
+            and
+            <code
+              class="language-markup"
+              style="padding: 2px; background-color: #6d98861b"
+              >height:auto</code
+            >.
+          </p>
+        </div>
+        <h4 class="center">Circular Image</h4>
+        <div class="col" style="max-width: 700px; margin: auto">
+          <div class="card-panel">
+            <div class="row valign-wrapper" style="margin-bottom: 0">
+              <div class="col s2">
+                <img
+                  src="images/pic.png"
+                  alt=""
+                  class="circle responsive-img"
+                  style="width: 70px"
+                />
+              </div>
+              <div class="col s10">
+                <span class="black-text" style="width: 50px">
+                 "All my fellow Pilipinos, now this is my side. listen and look and listen and learn.""
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Responsive Embeds -->
+      <div class="container">
+        <h5 class="center">Videos</h5>
+        <div class="text">
+          <h5 style="font-weight: bold">Responsive Embeds</h5>
+          <p> To make your embeds responsive, merely wrap them with a containing div which has the class
+            <code class="language-markup" style="padding: 2px; background-color: #6d98861b">video-container</code>.
+          </p>
+        </div>
+        <iframe 
+          width="884"
+          height="495"
+          src="https://www.youtube.com/embed/_pq1cQVfUxw"
+          title='"Listen and look and listen and learn"'
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Material Box -->
+      <div class="container">
+        <h5 class="center">Material Box</h5>
+        <div class="text">
+        <h5 style="font-weight: bold">Material Box</h5>
+          <p> Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key. </p>
+        </div>
+          <div class="img" style="display: flex; justify-content:center; margin: 30px 0; gap: 30px;" >
+          <img class="materialboxed responsive-img" width="650" style="width: 400px; height: auto; box-shadow: 5px 5px rgba(0, 0, 0, 0.148)" data-caption="Mockup Design only" src="images/Telecall.png" alt="">
+          <img class="materialboxed responsive-img" width="650" style="width: 400px; height: auto; box-shadow: 5px 5px rgba(0, 0, 0, 0.148)" data-caption="Mockup Design only" src="images/Telecall2.png" alt="">
+        </div>
+        <p class="center">Creating the above image with the effect is as simple as adding a <code
+          class="language-markup"   
+          style="padding: 2px; background-color: #6d98861b"
+          >materialboxed </code> class to the image tag.</p>
+      </div>  
+    </div>
+
+    <div class="container" style="margin-bottom: 30vh;">
+      <h5 class="center">Slider </h5>
+      <div class="text">
+      <h5 style="font-weight: bold">Slider</h5>
+      <p> Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+        </div>
+        <div class="slider width" style="margin: 30px auto; max-width: 85%;">
+          <ul class="slides">
+            <li >
+              <img src="images/Telecall.png" > <!-- random image -->
+              <div class="caption center-align">
+                <h3>Our Books!</h3>
+                <h5 class="light grey-text text-lighten-3">(Mockup only not real.)</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/Telecall2.png"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Our Sign!</h3>
+                <h5 class="light grey-text text-lighten-3">(Mockup only not real.)</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/Telecall3.png"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>Our School Banner!</h3>
+                <h5 class="light grey-text text-lighten-3">(Mockup only not real.)</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/Telecall4.png"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>Our IDs!</h3>
+                <h5 class="light grey-text text-lighten-3">(Mockup only not real.)</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>  
+  </div>
+
+          <!-- JQuery CDN -->
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+          <!-- Compiled and minified JavaScript CDN -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+          <script>
+            $(document).ready(function(){
+              $('.materialboxed').materialbox({
+                inDuration: 1000
+              });
+            });
+
+            $(document).ready(function(){
+              $('.slider').slider({
+                height:450
+              });
+            });
+                  
+          </script>
+  </body>
+</html>
