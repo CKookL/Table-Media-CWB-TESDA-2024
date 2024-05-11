@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table-Media</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="images/icon.png" alt="" />
+      <p style="padding-left: 60px">Table</p>
+      <div
+        style="display: flex; align-items: center; gap: 20px; font-weight: 600"
+      >
+        <a href="table.html" style="color: #6d9886">Tables</a>
+        <a href="index.html">Medias</a>
+      </div>
+    </nav>
+
+    <div class="group">
+      <div
+        class="container text"
+        style="max-width: 40vw; box-shadow: none; border: none"
+      >
+        <p class="center">
+          <b>Tables </b> are a nice way to organize a lot of data. We provide a
+          few utility classes to help you style your table as easily as
+          possible. In addition, to improve mobile experience, all tables on
+          mobile-screen widths are centered automatically.
+        </p>
+      </div>
+
+      <!-- Table Default -->
+      <div class="container">
+        <h5 class="center">Table</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Money</th>
+              <th>Exchange</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+              <td>$10.00</td>
+              <td>$9.13</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+              <td>$10.00</td>
+              <td>$6.24</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+              <td>$10.00</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Shannon</td>
+              <td>Kitkat</td>
+              <td>$9.99</td>
+              <td>$10.00</td>
+              <td>$0.01</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Stripped -->
+      <div class="container">
+        <p class="center">
+          Add  <code
+          class="language-markup"
+          style="padding: 2px; background-color: #6d98861b"
+          >class="striped"</code> to the table tag for a striped table
+        </p>
+        <h5 class="center">Stripped</h5>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Money</th>
+              <th>Exchange</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+              <td>$10.00</td>
+              <td>$9.13</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+              <td>$10.00</td>
+              <td>$6.24</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+              <td>$10.00</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Shannon</td>
+              <td>Kitkat</td>
+              <td>$9.99</td>
+              <td>$10.00</td>
+              <td>$0.01</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Hightlight -->
+      <div class="container">
+        <p class="center">
+          Add <code
+          class="language-markup"
+          style="padding: 2px; background-color: #6d98861b"
+          >class="highlight"</code> to the table tag for a highlight table.
+        </p>
+        <h5 class="center">Highlight Table</h5>
+        <table class="highlight">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Money</th>
+              <th>Exchange</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+              <td>$10.00</td>
+              <td>$9.13</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+              <td>$10.00</td>
+              <td>$6.24</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+              <td>$10.00</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Shannon</td>
+              <td>Kitkat</td>
+              <td>$9.99</td>
+              <td>$10.00</td>
+              <td>$0.01</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Centered -->
+      <div class="container">
+        <p class="center">
+          Add <code
+          class="language-markup"
+          style="padding: 2px; background-color: #6d98861b"
+          >class="centered"</code> to the table tag to center align all the text in
+          the table
+        </p>
+        <h5 class="center">Centered</h5>
+        <table class="centered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Money</th>
+              <th>Exchange</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+              <td>$10.00</td>
+              <td>$9.13</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+              <td>$10.00</td>
+              <td>$6.24</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+              <td>$10.00</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Shannon</td>
+              <td>Kitkat</td>
+              <td>$9.99</td>
+              <td>$10.00</td>
+              <td>$0.01</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Responsive -->
+      <div class="container" style="margin-bottom: 100px">
+        <p class="center">
+          Add <code
+          class="language-markup"
+          style="padding: 2px; background-color: #6d98861b"
+          >class="responsive-table"</code> to the table tag to make the table
+          horizontally scrollable on smaller screen widths.
+        </p>
+        <h5 class="center">Responsive Table</h5>
+        <table class="responsive-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Money</th>
+              <th>Exchange</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+              <td>$10.00</td>
+              <td>$9.13</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+              <td>$10.00</td>
+              <td>$6.24</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+              <td>$10.00</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Shannon</td>
+              <td>Kitkat</td>
+              <td>$9.99</td>
+              <td>$10.00</td>
+              <td>$0.01</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
